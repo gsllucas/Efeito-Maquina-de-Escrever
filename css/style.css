@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'IBM Plex Mono';
+    font-weight: bold;
+    outline: none;
+}
+
+body {
+    padding: 20px;
+}
+
+.center span {
+    background: #FB5;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    width: 100%;
+    padding: 100px 20px;
+    font-size: 3rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.center span:after {
+    content: '|';
+    color: #fff;
+    animation: animation .6s forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
+
